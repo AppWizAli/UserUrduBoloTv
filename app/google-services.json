@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "432215955529",
+    "project_id": "urdubolotv-c88cd",
+    "storage_bucket": "urdubolotv-c88cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432215955529:android:85e6d71560d5c079d58798",
+        "android_client_info": {
+          "package_name": "com.HiSkyTech.UrduBoloTv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY5uvXJ7egtjbjxY5s_aXHMGZwbKb-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432215955529:android:ed78bac263f1182dd58798",
+        "android_client_info": {
+          "package_name": "com.hiskytech.userurdubolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY5uvXJ7egtjbjxY5s_aXHMGZwbKb-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432215955529:android:aa631b2ad758376bd58798",
+        "android_client_info": {
+          "package_name": "com.socialmarkaz.sharedpreferences"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY5uvXJ7egtjbjxY5s_aXHMGZwbKb-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432215955529:android:3be103446dc16724d58798",
+        "android_client_info": {
+          "package_name": "com.urduboltv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY5uvXJ7egtjbjxY5s_aXHMGZwbKb-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432215955529:android:f3916ce65ecfd1d7d58798",
+        "android_client_info": {
+          "package_name": "com.urduboltv.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY5uvXJ7egtjbjxY5s_aXHMGZwbKb-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432215955529-h11gr0b94s703c4hvc4ho6grlg3lg0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
