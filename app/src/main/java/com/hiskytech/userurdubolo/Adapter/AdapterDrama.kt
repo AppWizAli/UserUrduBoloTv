@@ -35,9 +35,9 @@ class AdapterDrama (var context: Context, val data: List<ModelDrama>, val listen
         fun bind(modelDrama: ModelDrama) {
 
 
-            Glide.with(context).load(modelDrama.thumbnail).centerCrop().placeholder(R.drawable.ic_launcher_background)
+            Glide.with(context).load(modelDrama.thumbnail).centerCrop()
                 .into(itemBinding.dramaImage)
-
+itemBinding.dramaName.text=modelDrama.dramaName
             itemBinding.containerDrama.setOnClickListener{ listener.onItemClick(modelDrama)}
 
 

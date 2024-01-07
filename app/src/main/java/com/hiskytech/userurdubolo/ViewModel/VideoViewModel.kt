@@ -55,6 +55,10 @@ class VideoViewModel(context: Application) : AndroidViewModel(context) {
 
         return  repo.getPrivateVideoList()
     }
+    suspend fun getPublicVideoList(): Task<QuerySnapshot> {
+
+        return  repo.getPublicVideoList()
+    }
     suspend fun getAssignedVideo(id: String): Task<QuerySnapshot> {
 
         return repo.getAssignedVideo(id)

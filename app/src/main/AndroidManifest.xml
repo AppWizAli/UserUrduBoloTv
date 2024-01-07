@@ -2,16 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon1"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.UserurduBolo"
+        tools:overrideLibrary="androidx.wear.compose.material.core"
         tools:targetApi="31">
+        <activity
+            android:name=".Ui.ActivityWebView"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ActivityExpoPlayer"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Ui.ActivityVideos"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ActivityEditProfile"
+            android:exported="false" />
         <activity
             android:name=".Ui.ActivityIntro"
             android:exported="false" />
@@ -23,7 +45,8 @@
             android:exported="false" />
         <activity
             android:name=".Ui.ActivityVideoPlayer"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Ui.ActivityVideoAbout"
             android:exported="false" />

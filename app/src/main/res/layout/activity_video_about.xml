@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/gradientintro"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/laythumnail"
+        android:layout_width="match_parent"
         android:layout_height="470dp"
         >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            >
 
 
             <ImageView
@@ -21,21 +23,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+
                 android:alpha="0.5"
-                android:background="@drawable/blur_gradient"
                 />
             <ImageView
+                android:id="@+id/ivback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_keyboard_backspace_24"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 />
-
-        </RelativeLayout>
-
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/circleImageView"
+            android:id="@+id/ivplayer"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
@@ -47,28 +47,74 @@
             android:src="@drawable/baseline_play_circle_outline_24"
             app:civ_border_color="#951A1A"
             app:civ_border_width="2dp" />
+        </RelativeLayout>
 
-    </RelativeLayout>
+
+
+
 
 
     <TextView
+        android:id="@+id/dramaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="The Gray Man"
-        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/laythumnail"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/primary"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginLeft="70dp"
+
 
         />
+
+        <TextView
+            android:id="@+id/tvEpisode"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/dramaName"
+            android:layout_below="@+id/dramaName"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Episode :- "/>
 
     <TextView
+        android:id="@+id/tvEpisodeNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:text="The Gray man is a 2022 American \n    action thriller film directed by \n         Anthony and Joe Russo"
-        android:textColor="#BCB9B9"
-        android:layout_marginLeft="70dp"
+        android:text="25"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/tvEpisode"
+        android:layout_below="@+id/dramaName"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
 
         />
-</LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ldfhjkdlsfhdslfjkdshfldsjkhdslfjkhdsfldsjkhfdsljkfhdsfldsjkhfdslkjfhdsflkjdshfsldjkfhdsljkfhdsfljksdhfdlsjkfhdsljkfhdslkjh"
+            android:layout_below="@+id/tvEpisodeNo"
+            android:textColor="#BCB9B9"
+            android:padding="8dp"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_file_download_24"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/primary"
+    android:layout_below="@+id/tvDescription"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/floatingactiondownload"/>
+    </RelativeLayout>
+</ScrollView>

@@ -16,6 +16,11 @@
         android:name="com.hiskytech.userurdubolo.Fragments.FragmentSearch"
         android:label="Dashboard"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_private"
+        android:name="com.hiskytech.userurdubolo.Fragments.FragmentPrivate"
+        android:label="Exclusive Content"
+        tools:layout="@layout/fragment_private" />
 
     <fragment
         android:id="@+id/navigation_Profile"

@@ -41,8 +41,12 @@ class SeasonViewModel(context: Application) : AndroidViewModel(context) {
     {
         return repo.getSeasonbyId(type)
     }
-    suspend fun getHudutsuzSeasonList(name:String):Task<QuerySnapshot>
+    suspend fun getHudutsuzVideoList(name:String):Task<QuerySnapshot>
     {
-        return repo.getHudutsuzSeasonList(name)
+        return repo.getHudutsuzVideoList(name)
+    }
+    suspend fun getAllSeasons():Task<QuerySnapshot>
+    {
+        return repo.getAllSeasonsname()
     }
 }

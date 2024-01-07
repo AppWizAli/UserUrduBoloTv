@@ -30,14 +30,25 @@ class SharedPrefManager(var context: Context) {
     fun putDramaList(list: List<ModelDrama>) {
         editor.putString("ListDrama", Gson().toJson(list))
         editor.commit()
-    }   fun putHudutsuzSeasonList(list: List<ModelSeason>) {
-        editor.putString("HudutsuzSeasonList", Gson().toJson(list))
+    }
+    fun putAllSeasonsList(list: List<ModelSeason>) {
+        editor.putString("AllSeasons", Gson().toJson(list))
         editor.commit()
     }
-    fun getHudutsuzSeasonList(): List<ModelSeason>{
+    fun putAllSeasonsList(): List<ModelSeason>{
 
-        val json = sharedPref.getString("HudutsuzSeasonList", "") ?: ""
+        val json = sharedPref.getString("AllSeasons", "") ?: ""
         val type: Type = object : TypeToken<List<ModelSeason?>?>() {}.getType()
+        return Gson().fromJson(json, type)
+    }
+    fun putHudutsuzVideoList(list: List<ModelVideo>) {
+        editor.putString("HudutsuzVideoList", Gson().toJson(list))
+        editor.commit()
+    }
+    fun getHudutsuzVideoList(): List<ModelVideo>{
+
+        val json = sharedPref.getString("HudutsuzVideoList", "") ?: ""
+        val type: Type = object : TypeToken<List<ModelVideo?>?>() {}.getType()
         return Gson().fromJson(json, type)
     }
 
@@ -71,8 +82,8 @@ class SharedPrefManager(var context: Context) {
         editor.putString("ListSeasons", Gson().toJson(list))
         editor.commit()
     }
-    fun getVideoList(): ArrayList<ModelVideo> {
-        val json = sharedPref.getString("ListVideo", "") ?: ""
+    fun getPublicVideoList(): ArrayList<ModelVideo> {
+        val json = sharedPref.getString("PublicListVideo", "") ?: ""
         val type: Type = object : TypeToken<ArrayList<ModelVideo>>() {}.type
 
         return Gson().fromJson(json, type) ?: ArrayList()
@@ -80,13 +91,13 @@ class SharedPrefManager(var context: Context) {
 
 
 
-    fun putVideoList(list: ArrayList<ModelVideo>) {
-        editor.putString("ListVideo", Gson().toJson(list))
+    fun putPublicVideoList(list: ArrayList<ModelVideo>) {
+        editor.putString("PublicListVideo", Gson().toJson(list))
         editor.commit()
     }
 
 
-    public  fun saveAdminLogin(isLoggedIn:Boolean)
+    public  fun saveUserLogin(isLoggedIn:Boolean)
     {
         editor.putBoolean("isLoggedIn",isLoggedIn)
         editor.commit()
@@ -95,28 +106,28 @@ class SharedPrefManager(var context: Context) {
         editor.putBoolean("IsCelebration", isLoggedIn)
         editor.commit()
     }
-        fun saveAdmin(user: Admin) {
+        fun saveUser(user: ModelUser) {
 
-            editor.putString("admin", Gson().toJson(user))
+            editor.putString("user", Gson().toJson(user))
             editor.commit()
 
 
         }
 
-    fun getAdmin(): Admin {
-        val json = sharedPref.getString("admin", "") ?: ""
+    fun getUser(): ModelUser {
+        val json = sharedPref.getString("user", "") ?: ""
 
         // If the JSON string is empty or null, return a default InvestmentModel object
         if (json.isEmpty()) {
-            return Admin() // Replace this with your default InvestmentModel constructor
+            return ModelUser() // Replace this with your default InvestmentModel constructor
         }
 
         // Try to deserialize the JSON string into an InvestmentModel object
         return try {
-            Gson().fromJson(json, Admin::class.java)
+            Gson().fromJson(json, ModelUser::class.java)
         } catch (e: JsonSyntaxException) {
             // If the deserialization fails, return a default InvestmentModel object
-            Admin() // Replace this with your default InvestmentModel constructor
+            ModelUser() // Replace this with your default InvestmentModel constructor
         }
     }
 
@@ -131,4 +142,10 @@ class SharedPrefManager(var context: Context) {
       return  sharedPref.getBoolean("IsCelebration",false)!!
     }
 
+    public fun clearWholeSharedPrefrences()
+
+    {
+        editor.clear()
+        editor.commit()
+    }
 }

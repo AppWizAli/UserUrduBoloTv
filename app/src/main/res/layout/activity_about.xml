@@ -1,69 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradientvideoabout"
+    android:background="@drawable/gradientintro"
     tools:context=".Ui.ActivityAbout">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:src="@drawable/img_1"
-        android:scaleType="fitXY"
-        />
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:src="@drawable/icon1"
-        android:layout_gravity="end"
-        />
-    <TextView
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="The Grey Men"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
-        android:textSize="20sp"
-        />
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="2021 Action_Adventure_fantasy 2h36m"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Gray Man is a 2022 American"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/primary"
+        android:text="Access Exclusive Content on UrduBoloTv"
+        android:textStyle="bold" />
 
-        android:textSize="15sp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        />
+    <!-- Description Section -->
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="action thriller fil directed by"
-        android:textSize="15sp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Anthony and Joe Russo"
-        android:textSize="15sp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        />
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="Welcome to UrduBoloTv, your ultimate destination for top-notch entertainment! At UrduBoloTv, we bring you an exclusive collection of dramas, seasons, and videos tailored to suit your entertainment needs.\n\nWhat Makes Us Unique?\nWe take pride in curating a diverse library of content that caters to a wide array of tastes. Our platform offers a seamless viewing experience, where users can immerse themselves in a world of captivating storytelling and compelling narratives.\n\nUnlock Hidden Gems\nWhile browsing through our extensive content library, you might come across some hidden gems—videos that are exclusive and kept private for various reasons. These exclusive videos are a testament to our commitment to quality and diversity.\n\nRequest Access\nUrduBoloTv understands the value of your preferences. Should you come across a video that's marked as exclusive, don't fret! You have the power to request access to these exclusive videos. Simply reach out to our admin team through our in-app messaging system or WhatsApp.\n\nAdmin Approval\nUpon receiving your request, our diligent admin team carefully reviews it. When they grant permission, you unlock access to that particular video, making it available for your viewing pleasure within the app.\n\nTailored Experience\nYour satisfaction is our priority. We believe in providing a personalized experience, ensuring that you get the content you desire. Our commitment to user satisfaction drives us to ensure that every interaction is meaningful and enjoyable.\n\nJoin UrduBoloTv Today\nEmbark on an exhilarating entertainment journey with UrduBoloTv. Dive into a world where exclusive content awaits your exploration. Download our app now and indulge in premium entertainment tailored just for you.\n\nThank you for choosing UrduBoloTv, where entertainment knows no bounds!"
+        android:lineSpacingExtra="8dp"
+        android:textAlignment="center" />
+
 </LinearLayout>
+</ScrollView>

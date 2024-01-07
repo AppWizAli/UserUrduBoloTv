@@ -21,7 +21,6 @@ class AdapteraddVideo (var context: Context, val data: List<ModelVideo>, val lis
 
     interface OnItemClickListener {
         fun onItemClick(modelDrama: ModelVideo)
-        fun onDeleteClick(modelDrama: ModelVideo)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(ItemAddVideoBinding.inflate(LayoutInflater.from(parent.context), parent, false))
@@ -32,11 +31,11 @@ class AdapteraddVideo (var context: Context, val data: List<ModelVideo>, val lis
 
         fun bind(modelDrama: ModelVideo) {
 
-itemBinding.episodeNumber.text=modelDrama.episodeno
+/*itemBinding.episodeNumber.text=modelDrama.episodeno*/
             Glide.with(context).load(modelDrama.thumbnail).centerCrop()
-                .into(itemBinding.thumbnail)
-
-            itemBinding.conatiner.setOnClickListener{ listener.onItemClick(modelDrama)}
+                .into(itemBinding.videoThumanil)
+itemBinding.tvEpidoeNumber.text=modelDrama.episodeno
+            itemBinding.containerDrama.setOnClickListener{ listener.onItemClick(modelDrama)}
 
         }
 

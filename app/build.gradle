@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.hiskytech.userurdubolo"
-        minSdk 21
+        minSdk 25
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -55,6 +55,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.15.1'
     implementation 'com.google.firebase:firebase-inappmessaging-ktx:20.4.0'
     implementation 'com.google.firebase:firebase-firestore:24.10.0'
+    implementation 'androidx.wear.compose:compose-material:1.2.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'

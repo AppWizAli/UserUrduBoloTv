@@ -156,6 +156,10 @@ class Repo(var context: Context) {
         return VideoCollection
             .whereEqualTo(constants.PRIVACY,constants.VIDEO_PRIVACY_PRIVATE).get()
     }
+    suspend fun getPublicVideoList(): Task<QuerySnapshot> {
+        return VideoCollection
+            .whereEqualTo(constants.PRIVACY,constants.VIDEO_PRIVACY_PUBLIC).get()
+    }
     suspend fun getGroupList(): Task<QuerySnapshot> {
         return GroupCollection.get()
     }
@@ -309,6 +313,9 @@ class Repo(var context: Context) {
 
         suspend fun getAdmin(admin: String): Task<QuerySnapshot> {
             return AdminCollection.whereEqualTo("email", admin).get()
+        }
+    suspend fun getUser(password:String,email:String): Task<QuerySnapshot> {
+            return UserCollection.whereEqualTo("password", password).whereEqualTo("email",email).get()
         }
 
 
@@ -481,7 +488,10 @@ class Repo(var context: Context) {
         suspend fun getSeasonbyId(type: String): Task<DocumentSnapshot> {
             return SeasonCollection.document(type).get()
         }
-    suspend fun getHudutsuzSeasonList(type: String): Task<QuerySnapshot> {
+    suspend fun getHudutsuzVideoList(type: String): Task<QuerySnapshot> {
+            return VideoCollection.whereEqualTo("dramaName",type).get()
+        }
+    suspend fun getAllSeasonsname(): Task<QuerySnapshot> {
             return SeasonCollection.get()
         }
 

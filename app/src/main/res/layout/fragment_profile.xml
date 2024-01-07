@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/profile_bg"
+    android:background="@drawable/gradientintro"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.FragmentProfile">
 
@@ -11,12 +11,43 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:visibility="gone"
+    android:id="@+id/layAlert"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Dear User"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This section offers exclusive services and personalized experiences tailored just for you! To access these features, please log in to your account. We want to ensure you enjoy all the benefits our app has to offer. Thank you for choosing our platform!"
+            android:id="@+id/tvAlertLogin"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
 
+</RelativeLayout>
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         android:orientation="vertical"
-         tools:context=".MainActivity">
+         android:id="@+id/layProfile"
+         android:orientation="vertical">
 
          <RelativeLayout
              android:layout_width="match_parent"
@@ -27,13 +58,14 @@
                  android:layout_width="110dp"
                  android:layout_height="110dp"
                  android:layout_centerInParent="true"
-                 android:src="@drawable/hamza">
+                 android:src="@drawable/img_7">
 
              </de.hdodenhof.circleimageview.CircleImageView>
              <androidx.cardview.widget.CardView
+
                  android:layout_width="40dp"
                  android:layout_height="40dp"
-                 android:id="@+id/crd1"
+                 android:id="@+id/message"
                  android:layout_toLeftOf="@+id/crd2"
                  android:layout_centerInParent="true"
                  android:layout_marginRight="20dp"
@@ -49,7 +81,7 @@
              <androidx.cardview.widget.CardView
                  android:layout_width="40dp"
                  android:layout_height="40dp"
-                 android:id="@+id/crd3"
+                 android:id="@+id/call"
                  android:layout_marginStart="20dp"
                  android:layout_centerVertical="true"
                  android:layout_toRightOf="@id/crd2"
@@ -60,6 +92,7 @@
                      android:src="@drawable/cal"/>
              </androidx.cardview.widget.CardView>
              <TextView
+                 android:id="@+id/name"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:layout_below="@id/crd2"
@@ -73,6 +106,7 @@
          </RelativeLayout>
 
          <TextView
+             android:id="@+id/editprofile"
              android:layout_width="match_parent"
              android:layout_height="45dp"
         android:layout_marginBottom="15dp"
@@ -86,6 +120,7 @@
              />
 
          <TextView
+             android:id="@+id/about"
              android:layout_width="match_parent"
              android:layout_height="45dp"
              
@@ -98,6 +133,7 @@
              android:drawableStart="@drawable/baseline_info_outline_24"/>
 
          <TextView
+             android:id="@+id/terms"
              android:layout_width="match_parent"
              android:layout_height="45dp"
              
@@ -112,6 +148,7 @@
 
 
          <TextView
+             android:id="@+id/logout"
              android:layout_width="match_parent"
              android:layout_height="45dp"
              

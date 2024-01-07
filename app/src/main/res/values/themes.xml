@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/SecondaryVariant</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#414143</item>
+        <item name="android:statusBarColor">#E40E1B35</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">

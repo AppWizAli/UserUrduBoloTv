@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
-    android:background="@drawable/flag_transparent"
+    android:orientation="vertical"
     android:id="@+id/containerDrama"
     android:layout_marginBottom="10dp"
     android:layout_marginHorizontal="3dp"
@@ -11,16 +10,22 @@
     <androidx.cardview.widget.CardView
         android:layout_width="100dp"
         android:layout_height="130dp"
+        android:backgroundTint="#414143"
         app:cardCornerRadius="9dp"
         android:layout_margin="3dp"
         >
         <ImageView
             android:id="@+id/drama_image"
             android:layout_width="match_parent"
-            android:src="@drawable/hamza"
             android:layout_height="match_parent"/>
     </androidx.cardview.widget.CardView>
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DramAnme"
+    android:id="@+id/dramaName"
+    android:textColor="@color/primary"
+    android:layout_gravity="center"/>
   <!--  <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

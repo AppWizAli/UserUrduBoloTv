@@ -32,9 +32,12 @@ class AdapterSeason (var activity: Context, val data: List<ModelSeason>, val lis
         fun bind(modelSeason: ModelSeason) {
 
 
-            Glide.with(activity).load(modelSeason.thumbnail).centerCrop().placeholder(R.drawable.ic_launcher_background).into(itemBinding.dramaImage)
+            Glide.with(activity).load(modelSeason.thumbnail).centerCrop().into(itemBinding.dramaImage)
 
             itemBinding.containerDrama.setOnClickListener{ listener.onItemClick(modelSeason)}
+
+            itemBinding.tvSeasonNo.text=modelSeason.seasonNo
+            itemBinding.tvDramaNAme.text=modelSeason.dramaName
 
 
         }

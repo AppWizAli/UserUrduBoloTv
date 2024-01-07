@@ -3,25 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/gradientintro"
     tools:context=".Fragments.FragmentHome">
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="10dp">
+    android:layout_marginHorizontal="5dp">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <View
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerBanner"
             android:layout_width="match_parent"
-            android:layout_height="200dp"/>
+            android:layout_marginTop="3dp"
+            android:background="@drawable/gradientintro"
+            android:layout_height="wrap_content"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Original Series"
+            android:text="Drama Dose Spotlight"
             android:textColor="@color/white"
             android:layout_marginBottom="10dp"
             android:textStyle="bold"
@@ -70,6 +73,108 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rvCukur"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan Favorites"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvFanFavorites"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top-Rated Dramas"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvtopRatedDramas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended for You"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvRecomended"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon,Stay Tuned With Us ❤️"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerRecommended"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Türkçe 🇹🇷 Dundrum 🎥 Film 🎬"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvFilm"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unveil Thrilling Stories"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvUnveil"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enigmatic Reverie: ✨ Drama Chronicles"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvEnveil2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whispers in the Shadows: 🤫 The Drama Unfolds"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="9dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvUnveil3"/>
     </LinearLayout>
 
 </FrameLayout>

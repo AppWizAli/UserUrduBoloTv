@@ -54,26 +54,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UrduBolo Tv"
-            android:textStyle="bold"
-            android:textSize="27sp"
             android:layout_gravity="center"
-            android:fontFamily="@font/myfont"
-         android:layout_marginTop="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="15dp"
-            android:textColor="#FFBE00"/>
+            android:fontFamily="@font/myfont"
+            android:text="UrduBolo Tv"
+            android:textColor="#FFBE00"
+            android:textSize="27sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
             android:gravity="center"
-            android:layout_gravity="center"
             android:text="Get set for an unforgettable journey into an incredible world of entertainment. waiting just a click away."
             android:textColor="@color/white"
             android:textSize="16sp" />
-<!--
+        <!--
         <TextView
             android:id="@+id/tv2"
             android:layout_width="match_parent"
@@ -125,6 +125,7 @@ Experience the best in movies and TV shows, "
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/tvSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
@@ -158,9 +159,11 @@ Experience the best in movies and TV shows, "
                     android:textColor="@color/white" />
 
                 <TextView
+                    android:id="@+id/tvterms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Terms and Services "
+                    android:textStyle="bold"
                     android:textColor="@color/PrimaryVariant" />
 
                 <TextView
@@ -170,6 +173,7 @@ Experience the best in movies and TV shows, "
                     android:textColor="@color/white" />
 
                 <TextView
+                    android:id="@+id/tvPrivacy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Privacy Policy."

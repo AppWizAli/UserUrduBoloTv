@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/videoConatiner"
-    android:layout_width="140dp"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="15dp"
-    android:backgroundTint="#414143">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    android:orientation="horizontal"
+    android:id="@+id/containerDrama"
+    android:layout_marginBottom="10dp"
+    android:layout_marginHorizontal="3dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:backgroundTint="#1B191A"
+        app:cardCornerRadius="9dp"
+        android:layout_margin="3dp"
+        >
         <ImageView
-            android:id="@+id/thumbnail"
+            android:id="@+id/video_thumanil"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"/>
+            android:src="@drawable/imgthumb"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:orientation="horizontal"
-            android:padding="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Episode "
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/episodeNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:textStyle="bold"
-                android:textColor="#FDC00F" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/totalpisodes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="100"
-                android:textColor="@color/white" />
-        </LinearLayout>
-    </FrameLayout>
-</androidx.cardview.widget.CardView>
+</LinearLayout>

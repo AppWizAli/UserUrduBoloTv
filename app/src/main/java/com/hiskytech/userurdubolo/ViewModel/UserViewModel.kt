@@ -32,6 +32,9 @@ class UserViewModel(context: Application) : AndroidViewModel(context) {
     }    suspend fun getAdmin(modelUser: String): Task<QuerySnapshot> {
         return repo.getAdmin(modelUser)
     }
+    suspend fun getUser(password: String,email:String): Task<QuerySnapshot> {
+        return repo.getUser(password,email)
+    }
     suspend fun updateAdmin(modelUser: Admin): LiveData<Boolean> {
         return repo.updateAdmin(modelUser)
     } suspend fun updateUser(modelUser: ModelUser): LiveData<Boolean> {
