@@ -34,11 +34,11 @@ android:visibility="gone"
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This section offers exclusive services and personalized experiences tailored just for you! To access these features, please log in to your account. We want to ensure you enjoy all the benefits our app has to offer. Thank you for choosing our platform!"
+            android:text="یہ حصہ خصوصی خدمات اور صارف کے لئے خصوصی تجربات فراہم کرتا ہے جو صرف آپ کے لئے چھانا گیا ہے! یہ خصوصیات حاصل کرنے کے لئے، براہ کرم اپنے اکاؤنٹ میں لاگ ان کریں۔ ہم چاہتے ہیں کہ یہ یہیقینی بنائیں کہ آپ ہماری ایپ کے تمام فوائد کا لطف اٹھا سکیں۔ ہمارے پلیٹفارم کو منتخب کرنے کا شکریہ!"
             android:id="@+id/tvAlertLogin"
             android:gravity="center"
             android:layout_marginTop="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary"
             android:layout_centerInParent="true"/>
     </LinearLayout>
 
@@ -73,7 +73,8 @@ android:visibility="gone"
                  <ImageView
                      android:layout_width="match_parent"
                      android:layout_height="match_parent"
-                     android:src="@drawable/msg2"/>
+                     android:background="#263044"
+                     android:src="@drawable/whatsapp"/>
              </androidx.cardview.widget.CardView>
 
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="خوش آمدید" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+      android:text="ہم معافی چاہتے ہیں کہ ہوم اسکرین پر ویڈیو کی تصویر لوڈ ہونے میں وقت لگتا ہے۔
+    ہم آپ کے صبر کےلیے شکر گزار ہیں اور آپ کی مدد کرنے پر مصروف ہیں۔"/>
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageTextView"
+        android:layout_marginTop="16dp"
+        android:text="ٹھیک ہے"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+
+        android:gravity="center"
+        android:backgroundTint="@color/primary"/>
+</RelativeLayout>

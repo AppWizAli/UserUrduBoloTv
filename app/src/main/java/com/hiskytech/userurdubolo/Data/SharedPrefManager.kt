@@ -141,6 +141,15 @@ class SharedPrefManager(var context: Context) {
     {
       return  sharedPref.getBoolean("IsCelebration",false)!!
     }
+    public  fun isSorry():Boolean
+    {
+      return  sharedPref.getBoolean("isSorry",false)!!
+    }
+    public  fun putSorry()
+    {
+     editor.putBoolean("isSorry", true)
+        editor.commit()
+    }
 
     public fun clearWholeSharedPrefrences()
 

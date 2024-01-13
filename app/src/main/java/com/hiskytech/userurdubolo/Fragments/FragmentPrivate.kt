@@ -74,7 +74,17 @@ class FragmentPrivate : Fragment() ,AdapteraddVideo.OnItemClickListener {
         constants = Constants()
 
         sharedPrefManager = SharedPrefManager(mContext)
+binding.whatsapp.setOnClickListener()
+{
+        val message =
+            "🎬 Hi there! I'm enjoying the awesome content on your video streaming app! Got a question or suggestion to make it even better? Let's chat! 📺🌟" // Customized message with emojis
 
+        val uri =
+            Uri.parse("https://api.whatsapp.com/send?phone=923007392932 &text=${Uri.encode(message)}")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+
+}
 
         binding.rvPrivateVideos.layoutManager =
             GridLayoutManager(mContext, 3)

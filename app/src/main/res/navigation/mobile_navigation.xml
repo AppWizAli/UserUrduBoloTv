@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/navigation_private"
         android:name="com.hiskytech.userurdubolo.Fragments.FragmentPrivate"
-        android:label="Exclusive Content"
+        android:label="Private Channel"
         tools:layout="@layout/fragment_private" />
 
     <fragment

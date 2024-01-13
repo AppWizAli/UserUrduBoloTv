@@ -12,7 +12,7 @@
       <item
         android:id="@+id/navigation_private"
         android:icon="@drawable/baseline_sync_lock_24"
-        android:title="Exclusive Content" />
+        android:title="Private Channel" />
 
     <item
         android:id="@+id/navigation_Profile"

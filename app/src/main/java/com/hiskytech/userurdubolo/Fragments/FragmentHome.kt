@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.Toast
@@ -113,7 +114,10 @@ class FragmentHome : Fragment() ,AdapterDrama.OnItemClickListener , AdapterSeaso
 
         sharedPrefManager=SharedPrefManager(mContext)
 
-
+if(!sharedPrefManager.isSorry())
+{
+    showCustomDialog()
+}
 
 
         viewPagerBanner = binding.viewPagerBanner
@@ -282,6 +286,19 @@ class FragmentHome : Fragment() ,AdapterDrama.OnItemClickListener , AdapterSeaso
 
 
         return root
+    }
+
+    private fun showCustomDialog() {
+        dialog = Dialog(requireContext())
+        dialog.setContentView(R.layout.dialog_sorry)
+
+        val okButton = dialog.findViewById<Button>(R.id.okButton)
+        okButton.setOnClickListener {
+            dialog.dismiss() // Dismiss the dialog when the button is clicked
+            sharedPrefManager.putSorry()
+        }
+
+        dialog.show()
     }
 
     override fun onItemClick(modelDrama: ModelDrama) {
