@@ -57,7 +57,7 @@
             android:name=".Ui.ActivityAbout"
             android:exported="false" />
         <activity
-            android:name=".Ui.ActivitySplash"
+            android:name=".Ui.ActivitySplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

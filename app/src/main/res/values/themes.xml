@@ -29,6 +29,11 @@
     <style name="BottomNavigationTextAppearance">
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/icon1</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/black_m</item>
+    </style>
+
 
     <!-- Create a custom style for your activity background -->
     <style name="AppTheme" parent="Base.Theme.UserurduBolo">
